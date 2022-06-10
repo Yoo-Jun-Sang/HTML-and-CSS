@@ -6,13 +6,16 @@
   <link rel="stylesheet" href="indexCSS.css">
 </head>
 <body>
-  <input type="button" value="다크모드" style="width:150px; height:150px; font-size:25px;" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="라이트모드" style="width:150px; height:150px; font-size:25px;" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
+  <input id="NIGHT_DAY" type="button" value="Night Mode" style="width:150px; height:150px; font-size:25px;"onclick="
+    if(document.querySelector('#NIGHT_DAY').value==='Night Mode') {
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      document.querySelector('#NIGHT_DAY').value='Day Mode';
+    } else {
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelector('#NIGHT_DAY').value='Night Mode';
+    }
   ">
   <p style="font-size:70px; text-align:center; text-decoration:none; border:10px solid red;">S E C R E T P A G E</p>
   <p><h1><a href="JunSang Information.html" target="_blank" style="color:purple;">준상이 정보</a></h1></p>
